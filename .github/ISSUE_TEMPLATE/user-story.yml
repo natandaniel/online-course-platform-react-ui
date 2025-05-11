@@ -1,0 +1,72 @@
+name: User Story
+description: Template for user-focused features and stories
+title: "[User Story]: "
+labels: ["user-story"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to create a user story!
+
+  - type: textarea
+    id: epic
+    attributes:
+      label: Epic
+      description: Link to the epic this story belongs to
+      placeholder: This story is part of Epic #X: [Epic Name]
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User Story
+      description: Describe the story in the format "As a user, I want to... so that..."
+      placeholder: As a user, I want to... so that...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: List the requirements that must be met
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-tasks
+    attributes:
+      label: Technical Tasks
+      description: List the technical tasks needed to complete this story
+      placeholder: |
+        - [ ] Task 1
+        - [ ] Task 2
+        - [ ] Task 3
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List any dependencies on other stories or tasks
+      placeholder: |
+        - Depends on: [Issue number]
+        - Blocked by: [Issue number]
+
+  - type: dropdown
+    id: story-points
+    attributes:
+      label: Story Points
+      options:
+        - 1
+        - 2
+        - 3
+        - 5
+        - 8
+        - 13
+    validations:
+      required: true

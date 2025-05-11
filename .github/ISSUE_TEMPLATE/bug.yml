@@ -18,7 +18,7 @@ body:
       required: true
 
   - type: textarea
-    id: reproduction
+    id: steps-to-reproduce
     attributes:
       label: Steps to Reproduce
       description: Steps to reproduce the behavior
@@ -39,6 +39,26 @@ body:
       required: true
 
   - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happened
+      placeholder: A clear description of what actually happened
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-details
+    attributes:
+      label: Technical Details
+      description: Any relevant technical information
+      placeholder: |
+        - Component: [Component name]
+        - Browser: [Browser name and version]
+        - Screen size: [Screen size]
+        - Error messages: [Any error messages]
+
+  - type: textarea
     id: screenshots
     attributes:
       label: Screenshots
@@ -56,3 +76,12 @@ body:
         - Low
     validations:
       required: true
+
+  - type: textarea
+    id: related-stories
+    attributes:
+      label: Related Stories
+      description: Link to any related user stories or epics
+      placeholder: |
+        - Related to: [Issue number]
+        - Affects: [Issue number]

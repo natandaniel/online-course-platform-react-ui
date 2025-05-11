@@ -1,12 +1,12 @@
 name: Technical Task
-description: Template for technical implementation tasks like testing and optimization
+description: Template for technical implementation tasks
 title: "[Technical]: "
-labels: ["technical"]
+labels: ["technical-task"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this technical task template!
+        Thanks for taking the time to create a technical task!
 
   - type: textarea
     id: technical-description
@@ -14,6 +14,18 @@ body:
       label: Technical Description
       description: Provide a clear description of the technical task
       placeholder: Describe the technical task and its purpose...
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-requirements
+    attributes:
+      label: Technical Requirements
+      description: List the technical requirements that must be met
+      placeholder: |
+        - [ ] Requirement 1
+        - [ ] Requirement 2
+        - [ ] Requirement 3
     validations:
       required: true
 
@@ -27,20 +39,16 @@ body:
         - Required tools/libraries
         - Performance targets
         - Testing strategy
-    validations:
-      required: true
 
   - type: textarea
-    id: acceptance-criteria
+    id: dependencies
     attributes:
-      label: Acceptance Criteria
-      description: List the technical requirements that must be met
+      label: Dependencies
+      description: List any technical dependencies
       placeholder: |
-        - [ ] Criterion 1
-        - [ ] Criterion 2
-        - [ ] Criterion 3
-    validations:
-      required: true
+        - Required libraries
+        - Required configurations
+        - Related issues
 
   - type: dropdown
     id: priority
@@ -53,12 +61,16 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: dependencies
+  - type: dropdown
+    id: story-points
     attributes:
-      label: Dependencies
-      description: List any technical dependencies
-      placeholder: |
-        - Required libraries
-        - Required configurations
-        - Related issues
+      label: Story Points
+      options:
+        - 1
+        - 2
+        - 3
+        - 5
+        - 8
+        - 13
+    validations:
+      required: true

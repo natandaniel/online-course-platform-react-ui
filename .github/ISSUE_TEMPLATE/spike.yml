@@ -1,0 +1,72 @@
+name: Spike
+description: Template for technical research or investigation
+title: "[Spike]: "
+labels: ["spike"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to create a spike!
+
+  - type: textarea
+    id: spike-description
+    attributes:
+      label: Spike Description
+      description: Describe the research or investigation needed
+      placeholder: Describe what needs to be investigated...
+    validations:
+      required: true
+
+  - type: textarea
+    id: investigation-areas
+    attributes:
+      label: Investigation Areas
+      description: List the areas to be investigated
+      placeholder: |
+        - [ ] Area 1
+        - [ ] Area 2
+        - [ ] Area 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: time-box
+    attributes:
+      label: Time Box
+      description: Specify the time allocated for this spike
+      placeholder: e.g., 2 days, 1 week
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Deliverables
+      description: List the expected outputs from this spike
+      placeholder: |
+        - Research document
+        - Proof of concept
+        - Recommendation report
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List any dependencies for this spike
+      placeholder: |
+        - Required access
+        - Required tools
+        - Related issues
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
