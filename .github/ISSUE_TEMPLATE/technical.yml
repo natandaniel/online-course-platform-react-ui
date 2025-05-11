@@ -1,0 +1,64 @@
+name: Technical Task
+description: Template for technical implementation tasks like testing and optimization
+title: "[Technical]: "
+labels: ["technical"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this technical task template!
+
+  - type: textarea
+    id: technical-description
+    attributes:
+      label: Technical Description
+      description: Provide a clear description of the technical task
+      placeholder: Describe the technical task and its purpose...
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation-details
+    attributes:
+      label: Implementation Details
+      description: Describe the technical approach and requirements
+      placeholder: |
+        - Technical approach
+        - Required tools/libraries
+        - Performance targets
+        - Testing strategy
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: List the technical requirements that must be met
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List any technical dependencies
+      placeholder: |
+        - Required libraries
+        - Required configurations
+        - Related issues
