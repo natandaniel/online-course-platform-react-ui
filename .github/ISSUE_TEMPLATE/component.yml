@@ -1,0 +1,59 @@
+name: Component Development
+description: Template for tracking UI component development
+title: "[Component]: "
+labels: ["component"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this component development template!
+
+  - type: textarea
+    id: component-description
+    attributes:
+      label: Component Description
+      description: Provide a clear description of the component to be developed
+      placeholder: Describe the component and its purpose...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: List the requirements that must be met for this component
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: mock-data
+    attributes:
+      label: Mock Data Requirements
+      description: Describe the mock data needed for development
+      placeholder: Describe the structure and content of required mock data...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Complexity Level
+      options:
+        - Easy
+        - Medium
+        - Hard
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List any dependencies on other issues or components
+      placeholder: |
+        - Depends on: [Issue number]
+        - Blocked by: [Issue number]
