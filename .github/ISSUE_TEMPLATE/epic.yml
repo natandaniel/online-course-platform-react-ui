@@ -1,0 +1,98 @@
+name: Epic
+description: Template for creating epics that group related issues
+title: "[Epic]: "
+labels: ["epic"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to create an epic! This will help organize related issues and track progress of major features.
+
+  - type: textarea
+    id: epic-description
+    attributes:
+      label: Epic Description
+      description: Provide a clear, high-level description of this epic
+      placeholder: Describe the overall goal and purpose of this epic...
+    validations:
+      required: true
+
+  - type: textarea
+    id: business-value
+    attributes:
+      label: Business Value
+      description: Describe the value this epic brings to the project
+      placeholder: Explain why this epic is important and what value it delivers...
+    validations:
+      required: true
+
+  - type: textarea
+    id: epic-goals
+    attributes:
+      label: Epic Goals
+      description: List the main goals this epic aims to achieve
+      placeholder: |
+        - [ ] Goal 1
+        - [ ] Goal 2
+        - [ ] Goal 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: Related Issues
+      description: List the issues that are part of this epic
+      placeholder: |
+        - #X: [Issue Title]
+        - #Y: [Issue Title]
+        - #Z: [Issue Title]
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List any dependencies on other epics or external factors
+      placeholder: |
+        - Depends on Epic #X: [Epic Name]
+        - Blocked by: [Dependency]
+
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Success Criteria
+      description: Define what success looks like for this epic
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-considerations
+    attributes:
+      label: Technical Considerations
+      description: List any important technical considerations or constraints
+      placeholder: |
+        - Technical consideration 1
+        - Technical consideration 2
+        - Technical consideration 3
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any additional information or context
+      placeholder: Add any other relevant information...
